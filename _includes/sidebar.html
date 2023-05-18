@@ -1,0 +1,22 @@
+<div class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      <h1>
+        <a href="{{ site.baseurl }}/">
+          {{ site.title }}
+        </a>
+      </h1>
+      <p class="lead">{{ site.description }}</p>
+
+    </div>
+
+    <nav class="sidebar-nav">
+
+      {% for node in site.pages_list %}
+        <a class="sidebar-nav-item{% if page.url == node[1] %} active{% endif %}" href="{{ node[1]  }}">{{ node[0] }}</a>
+      {% endfor %}
+
+    </nav>
+
+  </div>
+</div>

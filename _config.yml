@@ -1,0 +1,34 @@
+# Dependencies
+# Using kramdown rather than redcarpet because of Latex support
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Jun's blog
+tagline:          'math algo crypto'
+description:      'My name is Jun Mei and I am a crypto fan. This blog is mostly about math, algo, and crypto.'
+url:              https://meijun.github.io
+baseurl:          
+
+author:
+  name:           'Jun Mei'
+  url:            https://meijun.github.io
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+gems: [jekyll-paginate]
+
+github:
+  repo:           https://github.com/meijun/meijun.github.io
+
+
+pages_list:
+  Home: '/'
+  Archives: '/archives'
+  Links: '/links'
